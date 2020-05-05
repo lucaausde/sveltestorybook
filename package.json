@@ -8,22 +8,26 @@
     "storybook": "start-storybook"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@rollup/plugin-commonjs": "11.0.2",
-    "@rollup/plugin-node-resolve": "^7.0.0",
-    "@storybook/addon-backgrounds": "^5.3.18",
-    "@storybook/addon-storysource": "^5.3.18",
-    "@storybook/addon-viewport": "^5.3.18",
-    "@storybook/svelte": "^5.3.18",
-    "babel-loader": "^8.1.0",
-    "rollup": "^1.20.0",
-    "rollup-plugin-livereload": "^1.0.0",
-    "rollup-plugin-svelte": "^5.0.3",
-    "rollup-plugin-terser": "^5.1.2",
-    "svelte": "^3.0.0",
-    "svelte-loader": "^2.13.6"
+    "@babel/core": "latest",
+    "@rollup/plugin-commonjs": "latest",
+    "@rollup/plugin-json": "^4.0.3",
+    "@rollup/plugin-node-resolve": "latest",
+    "@rollup/plugin-url": "^4.0.2",
+    "@storybook/addon-backgrounds": "latest",
+    "@storybook/addon-storysource": "latest",
+    "@storybook/addon-viewport": "latest",
+    "@storybook/svelte": "latest",
+    "babel-loader": "latest",
+    "rollup": "latest",
+    "rollup-plugin-gzip": "^2.4.0",
+    "rollup-plugin-livereload": "latest",
+    "rollup-plugin-svelte": "latest",
+    "rollup-plugin-terser": "latest",
+    "svelte": "latest",
+    "svelte-loader": "latest"
   },
   "dependencies": {
-    "sirv-cli": "^0.4.4"
+    "sirv-cli": "latest",
+    "svelte-i18n": "latest"
   }
 }

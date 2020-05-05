@@ -3,11 +3,15 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
+import gzipPlugin from "rollup-plugin-gzip";
+import json from "@rollup/plugin-json";
+import url from "@rollup/plugin-url";
+import path from "path";
 
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-  input: "src/index.js",
+  input: "src/main.js",
   output: {
     sourcemap: true,
     format: "iife",
@@ -15,7 +19,14 @@ export default {
     file: "public/build/bundle.js",
   },
   plugins: [
+    json(),
+    url({
+      limit: 0,
+      fileName: "[dirname][hash][extname]",
+      sourceDir: path.join(__dirname, "public/media"),
+    }),
     svelte({
+      //generate: "ssr",
       // enable run-time checks when not in production
       dev: !production,
       // we'll extract any component CSS out into
@@ -35,6 +46,7 @@ export default {
       dedupe: ["svelte"],
     }),
     commonjs(),
+    gzipPlugin(),
 
     // In dev mode, call `npm run start` once
     // the bundle has been generated
@@ -61,10 +73,14 @@ function serve() {
       if (!started) {
         started = true;
 
-        require("child_process").spawn("npm", ["run", "start", "--", "--dev"], {
-          stdio: ["ignore", "inherit", "inherit"],
-          shell: true,
-        });
+        require("child_process").spawn(
+          "yarn",
+          ["run", "start", "--", "--dev"],
+          {
+            stdio: ["ignore", "inherit", "inherit"],
+            shell: true,
+          }
+        );
       }
     },
   };
