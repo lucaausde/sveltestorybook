@@ -1,7 +1,8 @@
 # sveltestorybook
 
 > A template for Svelte apps
-> State of development: 🐣 [May, 8. 2020]
+
+State of development: 🐣 [May, 8. 2020]
 
 This is a project template for [Svelte](https://svelte.dev) apps. To simplify the development workflow, this template extends [Storybook](https://storybook.js.org) - with some addons - as well as other modules like [svelte-themer](https://github.com/josefaidt/svelte-themer) and [svelte-i18n](https://github.com/kaisermann/svelte-i18n). Feel free to use, copy, modify, merge or publish this template.
 
