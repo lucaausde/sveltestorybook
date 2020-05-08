@@ -1,4 +1,5 @@
 <script context="module">
+  import "../src/constants/fonts/fonts.css";
   import "../src/constants/styles/normalize.css";
   import "../src/constants/styles/gobals.css";
   import { ThemeWrapper } from "svelte-themer";

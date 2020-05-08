@@ -22,7 +22,6 @@ export default {
   plugins: [
     json(),
     url({
-      limit: 0,
       fileName: "[dirname][hash][extname]",
       sourceDir: path.join(__dirname, "public/media"),
     }),

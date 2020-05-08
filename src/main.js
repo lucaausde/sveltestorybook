@@ -1,3 +1,4 @@
+import "./constants/fonts/fonts.css";
 import "./constants/styles/normalize.css";
 import "./constants/styles/globals.css";
 import App from "./App.svelte";
