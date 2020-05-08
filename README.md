@@ -1,93 +1,58 @@
 ---
+# sveltestorybook
+---
 
-# svelte app
+> Svelte template
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+#### State of development: 🐣 [May, 8. 2020]
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+This is a project template for [Svelte](https://svelte.dev) apps. To simplify the development workflow, this template extends [Storybook](https://storybook.js.org) - with some addons - as well as other modules like [svelte-themer](https://github.com/josefaidt/svelte-themer) and [svelte-i18n](https://github.com/kaisermann/svelte-i18n). Feel free to use, copy, modify, merge or publish this template.
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+### Getting started ...
 
-_Note that you will need to have [Node.js](https://nodejs.org) installed._
-
-## Get started
-
-Install the dependencies...
+1. After cloning this repository, please install all dependencies with either npm or yarn.
 
 ```bash
-cd svelte-app
-yarn install
+yarn
 ```
 
-...then start [Rollup](https://rollupjs.org):
-
-```bash
-yarn dev
-```
-
-... or [Storybook](https://storybook.js.org/):
+2. Once you're done and did not run into errors, start eiter storybook or the development server.
 
 ```bash
 yarn storybook
+yarn dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
-
-## Building and running in production mode
-
-To create an optimised version of the app:
+3. When finished developing, build the app.
 
 ```bash
 yarn build
 ```
 
-You can run the newly built app with `yarn start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
+## New to Svelte?
 
-## Single-page app mode
+Check out their [tutorial](https://svelte.dev/tutorial/basics) or read their [documentation](https://svelte.dev/docs).
 
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
+## Don't know how to write stories?
 
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for _any_ path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
+Take the `Text` component as reference. `Text` is currently residing at [/src/components/atoms/Text/Text.svelte](https://github.com/lucaausde/sveltestorybook/blob/master/src/components/atoms/Text/Text.svelte). And the component's story at [/src/components/atoms/Text/Text.stories.js](https://github.com/lucaausde/sveltestorybook/blob/master/src/components/atoms/Text/Text.stories.js).
 
 ```bash
-npm install -g now
+import YourComponent from "./YourComponent.svelte";
+
+export default { title: "YourComponent" };
+
+export const description = () => ({
+  Component: YourComponent,
+  props: {
+    text: "Passing a prop",
+  },
+});
+
 ```
 
-Then, from within your project folder:
+## Want to use variables?
 
-```bash
-cd public
-now deploy --name my-project
-```
+No problem, I've got you covered. With [svelte-themer](https://github.com/josefaidt/svelte-themer) you can easily create themes and access [variables](https://github.com/lucaausde/sveltestorybook/blob/master/src/constants/theme/theme.js) in all Svelte files. Check out this [example](https://github.com/lucaausde/sveltestorybook/blob/master/src/components/atoms/Text/Text.svelte)!
 
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-yarn add -G surge
-```
-
-Then, from within your project folder:
-
-```bash
-yarn build
-surge public my-project.surge.sh
-```
+Thank you for using my template! 🏆
