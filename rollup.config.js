@@ -8,6 +8,7 @@ import gzipPlugin from "rollup-plugin-gzip";
 import json from "@rollup/plugin-json";
 import url from "@rollup/plugin-url";
 import path from "path";
+import image from "@rollup/plugin-image";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -21,6 +22,7 @@ export default {
   },
   plugins: [
     json(),
+    image(),
     url({
       fileName: "[dirname][hash][extname]",
       sourceDir: path.join(__dirname, "public/media"),

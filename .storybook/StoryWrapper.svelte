@@ -1,7 +1,7 @@
 <script context="module">
-  import "../src/constants/fonts/fonts.css";
+  import "../public/fonts/fonts.css";
   import "../src/constants/styles/normalize.css";
-  import "../src/constants/styles/gobals.css";
+  import "../src/constants/styles/globals.css";
   import { ThemeWrapper } from "svelte-themer";
   import { themes } from "../src/constants/theme/theme.js";
 </script>
