@@ -5,29 +5,36 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook -p 3333 -s ./.storybook/svelteinject"
   },
   "devDependencies": {
-    "@babel/core": "latest",
-    "@rollup/plugin-commonjs": "latest",
+    "@rollup/plugin-commonjs": "^11.1.0",
     "@rollup/plugin-json": "^4.0.3",
-    "@rollup/plugin-node-resolve": "latest",
+    "@rollup/plugin-node-resolve": "^7.1.3",
     "@rollup/plugin-url": "^4.0.2",
-    "@storybook/addon-backgrounds": "latest",
-    "@storybook/addon-storysource": "latest",
-    "@storybook/addon-viewport": "latest",
-    "@storybook/svelte": "latest",
-    "babel-loader": "latest",
-    "rollup": "latest",
-    "rollup-plugin-gzip": "^2.4.0",
-    "rollup-plugin-livereload": "latest",
-    "rollup-plugin-svelte": "latest",
-    "rollup-plugin-terser": "latest",
-    "svelte": "latest",
-    "svelte-loader": "latest"
+    "@storybook/addon-a11y": "^5.3.18",
+    "@storybook/addon-backgrounds": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-storysource": "^5.3.18",
+    "@storybook/addon-viewport": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/svelte": "^5.3.18",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.3",
+    "rollup": "^2.8.2",
+    "rollup-plugin-css-only": "^2.0.0",
+    "rollup-plugin-gzip": "^2.5.0",
+    "rollup-plugin-livereload": "^1.3.0",
+    "rollup-plugin-svelte": "^5.2.1",
+    "rollup-plugin-terser": "^5.3.0",
+    "style-loader": "^1.2.1",
+    "svelte": "^3.22.2",
+    "svelte-loader": "^2.13.6",
+    "webpack": "^4.43.0"
   },
   "dependencies": {
-    "sirv-cli": "latest",
-    "svelte-i18n": "latest"
+    "sirv-cli": "^0.4.5",
+    "svelte-i18n": "latest",
+    "svelte-themer": "^0.1.4"
   }
 }

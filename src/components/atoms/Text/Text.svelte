@@ -4,7 +4,7 @@
 
 <style>
   div {
-    color: black;
+    color: var(--theme-text);
   }
 </style>
 

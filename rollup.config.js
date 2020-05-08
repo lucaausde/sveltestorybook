@@ -1,3 +1,5 @@
+//https://github.com/thgh/rollup-plugin-css-only
+import css from "rollup-plugin-css-only";
 import svelte from "rollup-plugin-svelte";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
@@ -25,6 +27,7 @@ export default {
       fileName: "[dirname][hash][extname]",
       sourceDir: path.join(__dirname, "public/media"),
     }),
+    css({ output: "public/build/custom.css" }),
     svelte({
       //generate: "ssr",
       // enable run-time checks when not in production
