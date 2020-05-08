@@ -1,17 +1,9 @@
 <script>
-	export let name;
+	export let name = "world";
 	import Text from "./components/atoms/Text/Text.svelte";
 	import { ThemeWrapper } from "svelte-themer";
 	import { themes } from "./constants/theme/theme.js";
 </script>
-
-<ThemeWrapper themes="{themes}">
-	<main>
-		<h1>Hello {name}!</h1>
-		<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-		<Text text="Hi" />
-	</main>
-</ThemeWrapper>
 
 <style>
 	main {
@@ -34,3 +26,11 @@
 		}
 	}
 </style>
+
+<ThemeWrapper themes="{themes}">
+	<main>
+		<h1>Hello {name}!</h1>
+		<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+		<Text text="Hi" />
+	</main>
+</ThemeWrapper>
