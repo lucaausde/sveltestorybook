@@ -1,11 +1,12 @@
 <script>
+	import Variables from "./constants/Variables.svelte";
 	export let name = "world";
 	import Text from "./components/atoms/Text/Text.svelte";
 	import { ThemeWrapper } from "svelte-themer";
 	import { themes } from "./constants/theme/theme.js";
 </script>
 
-<style>
+<style lang="scss">
 	main {
 		text-align: center;
 		padding: 1em;
@@ -27,6 +28,7 @@
 	}
 </style>
 
+<Variables />
 <ThemeWrapper themes="{themes}">
 	<main>
 		<h1>Hello {name}!</h1>

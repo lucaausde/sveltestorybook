@@ -8,7 +8,7 @@
     color: var(--theme-text);
   }
   img {
-    max-width: 200px;
+    max-width: 300px;
   }
 </style>
 <!-- Image of owl found at https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/EasternScreechOwl-Rufous.jpg/1200px-EasternScreechOwl-Rufous.jpg via Bing search. (Filter: free to modify, use and share ++ commercially)-->

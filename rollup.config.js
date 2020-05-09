@@ -9,6 +9,7 @@ import json from "@rollup/plugin-json";
 import url from "@rollup/plugin-url";
 import path from "path";
 import image from "@rollup/plugin-image";
+import autoPreprocess from "svelte-preprocess";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -29,6 +30,7 @@ export default {
     }),
     css({ output: "public/build/custom.css" }),
     svelte({
+      preprocess: autoPreprocess(),
       //generate: "ssr",
       // enable run-time checks when not in production
       dev: !production,
