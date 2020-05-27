@@ -4,7 +4,7 @@
 
 State of development: 🐣 [May, 8. 2020]
 
-This is a project template for [Svelte](https://svelte.dev) apps. To simplify the development workflow, this template extends [sass/scss](https://sass-lang.com) and [Storybook](https://storybook.js.org) - with some addons - as well as other modules like [svelte-themer](https://github.com/josefaidt/svelte-themer). Feel free to use, copy, modify, merge or publish this template. (You may only use the [image](https://github.com/lucaausde/sveltestorybook/blob/master/src/components/atoms/ImageText/assets/flamingo.JPG) for personal use. To get the original image, just get in touch with me.)
+This is a project template for [Svelte](https://svelte.dev) apps. To simplify the development workflow, this template extends [sass/scss](https://sass-lang.com) and [Storybook](https://storybook.js.org) - with some addons - as well as other modules like [svelte-themer](https://github.com/josefaidt/svelte-themer). Feel free to use, copy, modify, merge or publish this template. (You may only use the [image](https://github.com/lucaausde/sveltestorybook/blob/master/src/components/atoms/ImageText/assets/flamingo.JPG) for personal use. To get the original, full sized image, just get in touch with me.)
 
 ## Getting started ...
 
