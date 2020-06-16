@@ -55,5 +55,3 @@ export const description = () => ({
 No problem, I've got you covered. With [svelte-themer](https://github.com/josefaidt/svelte-themer) you can easily create themes and access [variables](https://github.com/lucaausde/sveltestorybook/blob/master/src/constants/theme/theme.js) in all Svelte files. Check out this [example](https://github.com/lucaausde/sveltestorybook/blob/master/src/components/atoms/ImageText/ImageText.svelte)!
 
 ---
-
-Thank you for using my template! 🏆
